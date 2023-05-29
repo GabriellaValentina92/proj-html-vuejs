@@ -1,10 +1,8 @@
 <script>
-import AuthorDescription from "./AuthorDescription.vue";
-import ebook from "./ebookApp.vue";
+import ebookApp from "./ebookApp.vue";
 export default {
   components: {
-    AuthorDescription,
-    ebook,
+    ebookApp,
   },
 
   data() {
@@ -32,18 +30,23 @@ export default {
       ],
     };
   },
-
-  methods: {
-    getimgPath(img) {
-      return new URL(`../assets/img/${img}`, import.meta.url).href;
-    },
-  },
 };
 </script>
 
 <template>
-  <AuthorDescription />
-  <ebook />
+  <div class="container">
+    <ebookApp
+      v-for="appdevice in arrEbook"
+      :key="appdevice.Edevice"
+      :ebook="appdevice.Edevice"
+    />
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  background-color: #fef7e9;
+  display: flex;
+  justify-content: space-around;
+}
+</style>

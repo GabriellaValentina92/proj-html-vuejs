@@ -1,10 +1,12 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AuthorDescription from "./components/AuthorDescription.vue";
 import AppMain from "./components/AppMain.vue";
 
 export default {
   components: {
     AppHeader,
+    AuthorDescription,
     AppMain,
   },
 };
@@ -12,6 +14,7 @@ export default {
 
 <template>
   <AppHeader />
+  <AuthorDescription />
   <AppMain />
 </template>
 
