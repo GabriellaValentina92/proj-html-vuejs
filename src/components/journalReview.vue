@@ -23,12 +23,12 @@ export default {
       </div>
       <div class="btn"><a href="#"> Read All Testimonials</a></div>
     </div>
-    <div
-      class="cardbox"
-      v-for="element in store.ArrJournalReview"
-      :key="element.writer"
-    >
-      <div class="card">
+    <div class="cardbox">
+      <div
+        class="card"
+        v-for="element in store.ArrJournalReview"
+        :key="element.writer"
+      >
         <h1>{{ element.title }}</h1>
         <p>{{ element.text }}</p>
         <div class="writer">
@@ -74,6 +74,7 @@ export default {
   .cardbox {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     .card {
