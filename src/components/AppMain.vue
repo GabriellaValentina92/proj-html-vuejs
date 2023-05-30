@@ -3,12 +3,14 @@ import ebookApp from "./ebookApp.vue";
 import newBook from "./newBook.vue";
 import journalReview from "./journalReview.vue";
 import event from "./event.vue";
+import subscribeSection from "./subscribeSection.vue";
 export default {
   components: {
     ebookApp,
     newBook,
     journalReview,
     event,
+    subscribeSection,
   },
 
   data() {
@@ -65,6 +67,7 @@ export default {
   </div>
   <journalReview />
   <event />
+  <subscribeSection />
 </template>
 
 <style lang="scss" scoped>
