@@ -46,12 +46,8 @@ export default {
           name: "Contact Me",
           src: "#",
         },
-
-        {
-          name: "",
-          src: "#",
-        },
       ],
+
       releaseBook: [
         {
           title: "Latest Book Release",
@@ -81,6 +77,12 @@ export default {
         :key="menu.name"
         :menuName="menu.name"
       />
+
+      <div>
+        <a class="icon" href="#"
+          ><font-awesome-icon :icon="['fas', 'cart-shopping']"
+        /></a>
+      </div>
     </div>
     <bookrelease
       v-for="newBook in releaseBook"
@@ -107,6 +109,11 @@ export default {
     img {
       width: 100px;
     }
+  }
+
+  .icon {
+    color: white;
+    font-size: 0.8rem;
   }
 }
 </style>

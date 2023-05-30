@@ -81,6 +81,7 @@ export default {
     margin-top: 1.5rem;
 
     a {
+      transition: box-shadow 0.3s;
       width: 50px;
       font-size: 0.8rem;
       text-decoration: none;
@@ -91,5 +92,9 @@ export default {
       border-radius: 0.5rem;
     }
   }
+}
+
+.btn a:hover {
+  box-shadow: 0 0 11px #227055;
 }
 </style>

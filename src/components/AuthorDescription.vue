@@ -37,6 +37,7 @@
 
   .btn {
     margin-top: 2rem;
+    transition: all 1s ease-in-out;
 
     a {
       font-family: sans-serif;
@@ -48,5 +49,9 @@
       color: white;
     }
   }
+}
+
+.btn:hover {
+  transform: scale(1.2);
 }
 </style>

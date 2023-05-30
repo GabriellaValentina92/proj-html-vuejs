@@ -69,6 +69,14 @@ export default {
       padding: 0.6rem 1.5rem;
       border-radius: 0.5rem;
     }
+
+    .btn {
+      transition: all 0.8s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: rotate(360deg) scale(1.5);
+    }
   }
 
   .cardbox {

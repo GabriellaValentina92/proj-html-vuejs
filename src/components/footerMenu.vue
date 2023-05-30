@@ -75,7 +75,6 @@ export default {
             <li>
               Email: <a href="#">{{ footermenu.contact.email_adress }}</a>
             </li>
-            <li></li>
           </ul>
         </ul>
       </div>
