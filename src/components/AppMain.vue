@@ -2,11 +2,13 @@
 import ebookApp from "./ebookApp.vue";
 import newBook from "./newBook.vue";
 import journalReview from "./journalReview.vue";
+import event from "./event.vue";
 export default {
   components: {
     ebookApp,
     newBook,
     journalReview,
+    event,
   },
 
   data() {
@@ -62,6 +64,7 @@ export default {
     />
   </div>
   <journalReview />
+  <event />
 </template>
 
 <style lang="scss" scoped>

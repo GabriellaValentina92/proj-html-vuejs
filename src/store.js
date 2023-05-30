@@ -26,4 +26,24 @@ export default reactive({
       journal: " The Globe and Mail",
     },
   ],
+
+  ArrEvent: [
+    {
+      photo: "event2.jpg",
+      title: "Chicago Book Signing",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.",
+    },
+
+    {
+      photo: "event1.jpg",
+      title: "Meet & Greet With Amanda",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.",
+    },
+
+    {
+      photo: "event3.jpg",
+      title: " Open Book: Dialogues",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.",
+    },
+  ],
 });

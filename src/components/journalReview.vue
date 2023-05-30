@@ -73,6 +73,7 @@ export default {
 
   .cardbox {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 
     .card {
