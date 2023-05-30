@@ -29,8 +29,12 @@ export default {
         <p>{{ bookrelease.text }}</p>
       </div>
       <div class="btn">
-        <a href="#"> Buy on Amazon</a>
-        <a href="#"> Buy on AppleStore</a>
+        <a href="#"
+          ><font-awesome-icon :icon="['fab', 'amazon']" /> Buy on Amazon</a
+        >
+        <a href="#">
+          <font-awesome-icon :icon="['fab', 'apple']" /> Buy on AppleStore</a
+        >
       </div>
     </div>
   </div>

@@ -76,6 +76,13 @@ export default {
               Email: <a href="#">{{ footermenu.contact.email_adress }}</a>
             </li>
           </ul>
+          <div class="icons">
+            <a href="#"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+            <a href="#"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
+          </div>
         </ul>
       </div>
     </div>
@@ -84,6 +91,11 @@ export default {
       <span class="border">{{ footermenu.credits.theme }}</span>
       <span class="border">{{ footermenu.credits.right }}</span>
       <span class="border">{{ footermenu.credits.company }}</span>
+    </div>
+    <div class="icon">
+      <a href="#">
+        <font-awesome-icon :icon="['fas', 'chevron-up']" />
+      </a>
     </div>
   </div>
 </template>
@@ -155,5 +167,21 @@ export default {
   .border {
     border-left: 1px solid lightgray;
   }
+}
+
+.icon a {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  padding: 0.4rem;
+  border-radius: 2px;
+  background-color: rgb(174, 172, 172);
+  color: white;
+}
+
+.icons a {
+  color: white;
+  padding: 0 0.3rem;
+  margin-left: 0.5rem;
 }
 </style>
