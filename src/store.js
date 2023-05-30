@@ -66,4 +66,39 @@ export default reactive({
       subheading: "Vestibulum ante ipsum primis",
     },
   ],
+
+  ArrArticles: [
+    {
+      id: "01",
+      image: "20-Tips600.jpg",
+      title: "20 Creativity Tips",
+      writer: "by admin",
+      date: "October 24th, 2019",
+      categories: "Event, tips & tricks",
+      comment: "",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+
+    {
+      id: "02",
+      image: "thumb-08.jpg",
+      title: "What's on your Booklist?",
+      writer: "",
+      date: "October 24th, 2019",
+      categories: "",
+      comment: "0 comments",
+      text: "",
+    },
+
+    {
+      id: "03",
+      image: "thumb-13.jpg",
+      title: "Instabul Travel Guide",
+      writer: "",
+      date: "October 24th, 2019",
+      categories: "",
+      comment: "0 comments",
+      text: "",
+    },
+  ],
 });
