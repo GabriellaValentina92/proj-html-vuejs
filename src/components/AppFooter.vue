@@ -31,7 +31,7 @@ export default {
             copyright: "Copyright 2012-2020",
             theme: "Avada Theme by ThemeFusion",
             right: "All Right Reserved",
-            company: "Powwerd by WordPress",
+            company: "Powered by WordPress",
           },
         },
       ],

@@ -148,7 +148,9 @@ export default {
   text-align: center;
 
   span {
+    font-size: 0.6rem;
     padding: 0 0.4rem;
+    color: lightgray;
   }
 
   .border {
