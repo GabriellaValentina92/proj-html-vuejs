@@ -64,9 +64,14 @@ export default {
 
   .card img {
     filter: grayscale(0.5) contrast(0.8);
+    border-radius: 0 0 10% 0;
     width: 100%;
     height: 400px;
     object-fit: cover;
+    transition: box-shadow 0.5s;
+  }
+  .card img:hover {
+    box-shadow: 0 0 20px rgba(19, 19, 19, 0.4);
   }
 
   .content {
