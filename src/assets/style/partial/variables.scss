@@ -3,3 +3,9 @@
   margin: auto;
   padding: 0.4rem;
 }
+
+@mixin container-small {
+  max-width: 800px;
+  margin: auto;
+  padding: 0.4rem;
+}

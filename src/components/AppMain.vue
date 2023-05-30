@@ -1,8 +1,12 @@
 <script>
 import ebookApp from "./ebookApp.vue";
+import newBook from "./newBook.vue";
+import journalReview from "./journalReview.vue";
 export default {
   components: {
     ebookApp,
+    newBook,
+    journalReview,
   },
 
   data() {
@@ -28,6 +32,15 @@ export default {
           src: "#",
         },
       ],
+
+      audiobook: [
+        {
+          photoSrc: "audible-app400.png",
+          title: "New Audiobook",
+          subheading: "no time to read? no problem.listen to it",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.",
+        },
+      ],
     };
   },
 };
@@ -41,6 +54,14 @@ export default {
       :ebook="appdevice.Edevice"
     />
   </div>
+  <div>
+    <newBook
+      v-for="element in audiobook"
+      :key="element.title"
+      :bookApp="element"
+    />
+  </div>
+  <journalReview />
 </template>
 
 <style lang="scss" scoped>
