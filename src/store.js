@@ -46,4 +46,24 @@ export default reactive({
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.",
     },
   ],
+
+  ArrAboutAuthor: [
+    {
+      image: "box-1.jpg",
+      title: "About Me",
+      subheading: "Vestibulum ante ipsum primis",
+    },
+
+    {
+      image: "box-4.jpg",
+      title: "My Latest Book",
+      subheading: "Vestibulum ante ipsum primis",
+    },
+
+    {
+      image: "box-3.jpg",
+      title: "Book Singing",
+      subheading: "Vestibulum ante ipsum primis",
+    },
+  ],
 });

@@ -4,6 +4,9 @@ import newBook from "./newBook.vue";
 import journalReview from "./journalReview.vue";
 import event from "./event.vue";
 import subscribeSection from "./subscribeSection.vue";
+import aboutAuthor from "./aboutAuthor.vue";
+import articles from "./articles.vue";
+
 export default {
   components: {
     ebookApp,
@@ -11,6 +14,8 @@ export default {
     journalReview,
     event,
     subscribeSection,
+    aboutAuthor,
+    articles,
   },
 
   data() {
@@ -68,6 +73,8 @@ export default {
   <journalReview />
   <event />
   <subscribeSection />
+  <aboutAuthor />
+  <articles />
 </template>
 
 <style lang="scss" scoped>

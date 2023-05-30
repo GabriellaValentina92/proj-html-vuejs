@@ -40,7 +40,7 @@ export default {
 @use "../assets/style/partial/variables.scss" as *;
 
 .bg-color {
-  background-color: #fef7e9;
+  background-color: $bg-color;
 
   .cardcontainer {
     display: flex;
