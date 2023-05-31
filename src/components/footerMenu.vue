@@ -130,6 +130,7 @@ export default {
     flex: 1 0 0;
     margin-top: 6rem;
     color: white;
+    font-family: sans-serif;
 
     ul {
       flex: 0 0 30%;
@@ -138,11 +139,13 @@ export default {
 
     ul li {
       list-style: none;
+      font-size: 0.9rem;
       line-height: 1.5rem;
 
       a {
         color: white;
         text-decoration: none;
+        font-family: sans-serif;
       }
     }
   }
