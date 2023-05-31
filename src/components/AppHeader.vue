@@ -115,5 +115,9 @@ export default {
     color: white;
     font-size: 0.8rem;
   }
+
+  .icon:hover {
+    color: #f4b429;
+  }
 }
 </style>

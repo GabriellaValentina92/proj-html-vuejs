@@ -24,5 +24,13 @@ export default {
     color: white;
     padding: 0.4rem;
   }
+
+  a:hover {
+    color: #f4b429;
+  }
+}
+
+.menu:hover {
+  border-bottom: 2px solid #f4b429;
 }
 </style>
