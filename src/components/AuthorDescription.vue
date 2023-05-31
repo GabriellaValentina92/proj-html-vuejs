@@ -16,6 +16,7 @@
 
 <style lang="scss" scoped>
 @use "../assets/style/partial/variables.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
 
 .container {
   @include container-size;
@@ -24,6 +25,8 @@
   margin-bottom: 4rem;
 
   h1 {
+    font-family: "Freehand", cursive;
+    font-weight: 300;
     font-size: 3rem;
     color: #f4b429;
     line-height: 6rem;

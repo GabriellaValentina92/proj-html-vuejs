@@ -7,7 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronUp,
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -19,7 +23,7 @@ import { faApple } from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
 library.add(faCartShopping);
-library.add(faChevronUp);
+library.add(faChevronUp, faChevronRight, faChevronLeft);
 library.add(
   faFacebookF,
   faTwitter,

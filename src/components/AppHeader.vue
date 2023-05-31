@@ -1,11 +1,13 @@
 <script>
 import AppMenu from "./AppMenu.vue";
+// import slider from "./slider.vue";
 import bookrelease from "./bookrelease.vue";
 
 export default {
   components: {
     AppMenu,
     bookrelease,
+    // slider,
   },
 
   data() {
@@ -77,13 +79,21 @@ export default {
         :key="menu.name"
         :menuName="menu.name"
       />
-
       <div>
         <a class="icon" href="#"
           ><font-awesome-icon :icon="['fas', 'cart-shopping']"
         /></a>
       </div>
+      <div class="slidertext">
+        <h1>Damon Vaught</h1>
+        <p>
+          "Best-selling author and the most influential public intellectual in
+          the western world right now"
+        </p>
+        <div class="nyt-paper">-The New York Times</div>
+      </div>
     </div>
+    <!-- <slider /> -->
     <bookrelease
       v-for="newBook in releaseBook"
       :key="newBook.author"
@@ -94,6 +104,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/style/partial/variables.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
 .bg-img {
   background-image: url("../assets/img/header-background.jpg");
   background-size: cover;
@@ -105,6 +116,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     img {
       width: 100px;
@@ -118,6 +130,30 @@ export default {
 
   .icon:hover {
     color: #f4b429;
+  }
+
+  .slidertext {
+    position: absolute;
+    right: 500px;
+    top: 200px;
+
+    h1 {
+      font-family: "Freehand", cursive;
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: #f4b429;
+    }
+
+    p {
+      font-size: 2rem;
+      color: white;
+      font-weight: bolder;
+    }
+
+    .nyt-paper {
+      margin-top: 0.3rem;
+      color: lightgray;
+    }
   }
 }
 </style>
