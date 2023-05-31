@@ -29,20 +29,40 @@ export default {
       </div>
       <div class="cardArticlesBox">
         <div
-          class="cardArticle"
-          v-for="articles in store.ArrArticles"
-          :key="articles.id"
+          class="recent-article"
+          v-for="article in store.mainArticle"
+          :key="article.id"
         >
-          <img :src="getImagePath(articles.image)" alt="" />
+          <img :src="getImagePath(article.image)" alt="" />
           <div class="content">
-            <h3>{{ articles.title }}</h3>
+            <h3>{{ article.title }}</h3>
             <span class="subtitle">
-              {{ articles.writer }}
-              {{ articles.date }}
-              {{ articles.categories }}
-              {{ articles.comment }}
+              {{ article.writer }}
+              {{ article.date }}
+              {{ article.categories }}
+              {{ article.comment }}
             </span>
-            <p>{{ articles.text }}</p>
+            <p>{{ article.text }}</p>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <div
+            class="card"
+            v-for="articles in store.ArrArticles"
+            :key="articles.id"
+          >
+            <img :src="getImagePath(articles.image)" alt="" />
+            <div class="content">
+              <h3>{{ articles.title }}</h3>
+              <span class="subtitle">
+                {{ articles.writer }}
+                {{ articles.date }}
+                {{ articles.categories }}
+                {{ articles.comment }}
+              </span>
+              <p>{{ articles.text }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -82,26 +102,59 @@ export default {
 
   .cardArticlesBox {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    font-family: sans-serif;
+    margin: 1.5rem 0 3rem 0;
 
-    .cardArticle {
+    .recent-article {
+      flex: 0 0 50%;
+      padding-right: 4rem;
       background-color: white;
-      border: 40px solid white;
+      border: 10px solid white;
+
+      .content {
+        font-family: sans-serif;
+        h3 {
+          font-weight: 500;
+          margin: 1rem 0 0.5rem 0;
+        }
+
+        span {
+          font-size: 0.7rem;
+          color: lightgray;
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+          margin: 1rem 0;
+          color: rgb(148, 147, 147);
+        }
+      }
     }
 
-    .cardArticle p {
-      inline-size: 600px;
-      margin-top: 1rem;
-    }
-  }
+    .card-box {
+      flex: 1 0 0;
+      border: 10px solid white;
+      background-color: white;
 
-  .content {
-    margin-top: 2rem;
-    line-height: 1.5rem;
+      .card {
+        .content {
+          font-family: sans-serif;
+          h3 {
+            font-weight: 500;
+            margin: 0.2rem 0 0.2rem 0;
+          }
 
-    .subtitle {
-      font-size: 0.8rem;
-      color: #c6c4c4;
+          span {
+            font-size: 0.7rem;
+            color: lightgray;
+            margin-bottom: 1rem;
+          }
+        }
+      }
     }
   }
 }

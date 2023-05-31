@@ -72,7 +72,7 @@ export default reactive({
     },
   ],
 
-  ArrArticles: [
+  mainArticle: [
     {
       id: "01",
       image: "20-Tips600.jpg",
@@ -83,7 +83,9 @@ export default reactive({
       comment: "",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
+  ],
 
+  ArrArticles: [
     {
       id: "02",
       image: "thumb-08.jpg",
