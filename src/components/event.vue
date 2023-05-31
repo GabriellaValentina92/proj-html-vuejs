@@ -46,6 +46,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 2s ease-in-out;
   }
 }
 .containerbig {
@@ -65,6 +66,7 @@ export default {
 .eventcard {
   text-align: center;
   padding: 2rem;
+  transition: transform 1s ease-in-out;
 
   .text {
     background-color: white;
@@ -80,6 +82,10 @@ export default {
       margin-top: 0.8rem;
     }
   }
+}
+
+.eventcard:hover {
+  transform: scale(1.1);
 }
 .eventcard img {
   width: 100%;
